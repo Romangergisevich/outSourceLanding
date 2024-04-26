@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./src/styles/main_style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/splide.min.css" />
+    <title>Manao</title>
+  </head>
+  <body>
+    <button
+      id="upScroll"
+      class="upScrollBtn">
+      <img
+        src="./src/images/upScroll_icon.svg"
+        alt="#" />
+    </button>
+    <section
+      id="mainSection"
+      class="mainSection">
+      <header class="header">
+        <div class="header__firstPart">
+          <img
+            class="header__logo"
+            src="./src/images/logo.png"
+            alt="#" />
+          <nav class="header__navigation">
+            <ul class="navigation__list">
+              <li><a href="#secondSection">О нас</a></li>
+              <li><a href="#thirdSection">Услуги</a></li>
+              <li><a href="#fourthSection">Публикации</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__info">
+          <span class="header__info-phone">+7 (495) 128-13-24</span>
+          <span class="header__info-mail">info@manao-team.com</span>
+        </div>
+      </header>
+      <div class="mainSection__content">
+        <div class="mainSection__content-block">
+          <div class="mainSection__content-main">
+            <div>
+              <span>Верстка. Программирование. Дизайн.</span>
+              Техническая поддержка сайтов и корпоративных порталов
+            </div>
+            <button>Отправить сайт на оценку</button>
+          </div>
+        </div>
+      </div>
+      <div class="mainSection__footer">
+        <span class="mainSection__footer-partners">Партнёры:&nbsp&nbsp</span>
+        <span class="mainSection__footer-bitrix"></span>
+        <span class="mainSection__footer-bitrix1c"></span>
+      </div>
+    </section>
+    <section
+      id="secondSection"
+      class="secondSection">
+      <div class="secondSection__content">
+        <div class="secondSection__content-info">
+          <h2>О нас</h2>
+          <div class="secondSection__content-info-text">
+            <span class="secondSection__content-info-text-title">
+              Техподдержка от бесперебойного аутсорс-продакшна
+            </span>
+            Являясь партнером более 30 агентств, которые доверили нам 100+
+            проектов и могут подтвердить качество работы, мы сформировали новую
+            услугу, использовав весь опыт, накопленный в первом юните.
+            Manao.Support — это концентрация системной работы, четких процессов
+            и регламентов, позволяющих минимизировать ситуации, когда
+            исполнители о чем-то забыли, не завершили часть задачи или просто
+            некорректно ее поняли.
+          </div>
+          <div class="secondSection__content-info-text-imgContainer">
+            <img
+              class="secondSection__content-info-pic1"
+              src="./src/images/second_section_pic1.png"
+              alt="#" />
+            <img
+              class="secondSection__content-info-pic2"
+              src="./src/images/second_section_pic2.png"
+              alt="#" />
+          </div>
+        </div>
+        <img
+          class="secondSection__content-pic"
+          src="./src/images/second_section_pic3.png"
+          alt="#" />
+      </div>
+    </section>
+    <section
+      id="thirdSection"
+      class="thirdSection">
+      <div class="thirdSection__content">
+        <h2>Услуги</h2>
+        <span class="thirdSection__content-title"
+          >Возьмем на себя комплексную поддержку сайта/портала</span
+        >
+        <div class="thirdSection__content-list">
+          <div>
+            <a href="">
+              <img
+                src="./src/images/gear_icon.png"
+                alt="#" /> </a
+            >Оптимизировать верстку
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="./src/images/list_icon.png"
+                alt="" /></a
+            >Создать страницы
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="./src/images/adapt_icon.svg"
+                alt="" /></a
+            >Адаптировать содержание
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="./src/images/integer_icon.png"
+                alt="" /></a
+            >Настроить интеграцию
+          </div>
+        </div>
+        <div class="thirdSection__content-list">
+          <div>
+            <a href=""
+              ><img
+                src="./src/images/throwel_icon.svg"
+                alt="" /></a
+            >Модернизировать сайт
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="./src/images/brush_icon.png"
+                alt="" /></a
+            >Исправить ошибки
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="./src/images/pencils_icon.png"
+                alt="" /></a
+            >Разработать функционал
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="./src/images/update_icon.png"
+                alt="" /></a
+            >Обновить систему
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="fourthSection"
+      class="fourthSection">
+      <div class="fourthSection__content">
+        <h2>Публикации</h2>
+        <span>Делимся своим опытом и экспертизой</span>
+
+        <div
+          id="splide"
+          class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="./src/images/astronaut_pic.png"
+                  alt="astronaut" />
+              </li>
+              <li class="splide__slide">
+                <div>
+                  <img
+                    src="./src/images/satelite_pic.png"
+                    alt="satelite" />
+                    <span>qwerty</span>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./src/images/astronaut_pic.png"
+                  alt="astronaut" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./src/images/stonks_pic.png"
+                  alt="stonks" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./src/main.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  </body>
+</html>
