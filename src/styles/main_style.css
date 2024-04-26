@@ -666,3 +666,88 @@ html {
   line-height: 22px;
   color: #777777;
 }
+
+/* ----- slider ----- */
+
+.slideContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slide {
+  background-color: #f6f4f9;
+  border-radius: 10px;
+  min-height: 500px;
+  height: 100%;
+  width: 30%;
+}
+
+.slide__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  padding: 25px;
+}
+
+.slide__info-title {
+  font-family: "TTCommons-Demibold";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333333;
+}
+
+.slide__info-text {
+  font-size: 15px !important;
+  line-height: 25px !important;
+}
+
+.slide__info-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 2px solid #eae8ec;
+  height: 35px;
+}
+
+.slide__info-footer-date {
+  position: relative;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+.slide__info-footer-date::before {
+  position: absolute;
+  content: url("../images/calendar_icon.png");
+  left: -20px;
+  top: 1px;
+}
+
+.slide__img-astronaut {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-image: url("../images/astronaut_pic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide__img-satelite {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-image: url("../images/satelite_pic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide__img-stonks {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-image: url("../images/stonks_pic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
