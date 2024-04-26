@@ -23,39 +23,28 @@ let consultationVal = false;
 let rateVal = false;
 let accessVal = false;
 
-consultation.addEventListener("change", (e) => {
-  if (e.target.checked) {
-    consultationVal = true;
-  } else {
-    consultationVal = false;
-  }
+consultation.addEventListener("change", () => {
+  consultationVal = consultation.checked;
 });
 
-rate.addEventListener("change", (e) => {
-  if (e.target.checked) {
-    rateVal = true;
-  } else {
-    rateVal = false;
-  }
+rate.addEventListener("change", () => {
+  rateVal = rate.checked;
 });
 
-access.addEventListener("change", (e) => {
-  if (e.target.checked) {
-    accessVal = true;
-  } else {
-    accessVal = false;
-  }
+access.addEventListener("change", () => {
+  accessVal = access.checked;
 });
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const result = {};
-  result.name = userName.value;
-  result.site = site.value;
-  result.description = taskDescription.value;
-  result.consultation = consultationVal;
-  result.rate = rateVal;
-  result.access = accessVal;
+  const result = {
+    name: userName.value,
+    site: site.value,
+    description: taskDescription.value,
+    consultation: consultationVal,
+    rate: rateVal,
+    access: accessVal,
+  };
 
   form.reset();
   console.log(result);
