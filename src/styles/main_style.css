@@ -637,9 +637,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -649,6 +646,13 @@ html {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+}
+
+.fourthSection__content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
 }
 
 .fourthSection__content h2 {
@@ -675,20 +679,22 @@ html {
   width: 100%;
 }
 
+.slideContainer {
+  display: flex;
+}
+
 .slide {
   background-color: #f6f4f9;
   border-radius: 10px;
-  min-height: 500px;
-  height: 100%;
-  width: 30%;
+  margin: 0 15px;
 }
 
 .slide__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 250px;
-  padding: 25px;
+  height: 215px;
+  padding: 25px 25px 15px 25px;
 }
 
 .slide__info-title {
@@ -722,11 +728,11 @@ html {
   position: absolute;
   content: url("../images/calendar_icon.png");
   left: -20px;
-  top: 1px;
+  top: 2px;
 }
 
 .slide__img-astronaut {
-  height: 250px;
+  height: 235px;
   width: 100%;
   border-radius: 10px 10px 0 0;
   background-image: url("../images/astronaut_pic.png");
@@ -734,20 +740,32 @@ html {
   background-size: cover;
 }
 
-.slide__img-satelite {
-  height: 250px;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  background-image: url("../images/satelite_pic.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.publicationsCarousel {
+  padding: 0 7%;
+  overflow: hidden;
 }
 
-.slide__img-stonks {
-  height: 250px;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  background-image: url("../images/stonks_pic.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.carousel {
+  background: #ffffff;
 }
+
+.flickity-viewport {
+  border-radius: 10px;
+  height: 500px !important;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 500px;
+  position: relative;
+  margin-right: 10px;
+  background: transparent;
+  border-radius: 10px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+} */
