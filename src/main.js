@@ -14,7 +14,7 @@ upScrollBtn.addEventListener("click", () => {
 
 const form = document.querySelector("form");
 const userName = document.getElementById("userName");
-const site = document.getElementById("itemAdres");
+const site = document.getElementById("siteAdres");
 const consultation = document.getElementById("consultation");
 const rate = document.getElementById("rate");
 const access = document.getElementById("access");
@@ -57,5 +57,6 @@ form.addEventListener("submit", (e) => {
   result.rate = rateVal;
   result.access = accessVal;
 
+  form.reset();
   console.log(result);
 });
