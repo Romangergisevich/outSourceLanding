@@ -570,6 +570,7 @@ html {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   width: calc(25% - 30px);
+  min-width: 305px;
   margin: 35px 0 15px 0;
   border-radius: 10px;
   height: 120px;
@@ -653,6 +654,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin-bottom: 45px;
+  margin-top: 45px;
 }
 
 .fourthSection__content h2 {
