@@ -581,6 +581,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 35px 0 15px 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -591,6 +592,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -598,7 +600,6 @@ html {
   justify-content: space-around;
   width: calc(25% - 30px);
   min-width: 305px;
-  margin: 35px 0 15px 0;
   border-radius: 10px;
   height: 120px;
   color: #333333;
