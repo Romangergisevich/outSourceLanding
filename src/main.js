@@ -45,7 +45,7 @@ form.addEventListener("submit", (e) => {
     rate: rateVal,
     access: accessVal,
   };
-
+  document.getElementById("modal-1").checked = true;
   form.reset();
   console.log(result);
 });
